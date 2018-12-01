@@ -1,6 +1,6 @@
-package adventofcodekotlin.days
+package adventofcode2018.days
 
-import adventofcodekotlin.util.path
+import adventofcode2018.util.path
 import java.math.BigInteger
 import java.nio.file.Files
 

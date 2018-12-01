@@ -1,4 +1,4 @@
-package adventofcodekotlin.util
+package adventofcode2018.util
 
 import java.nio.file.Path
 import java.nio.file.Paths
