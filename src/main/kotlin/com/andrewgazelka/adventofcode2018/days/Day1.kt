@@ -1,6 +1,6 @@
-package adventofcode2018.days
+package com.andrewgazelka.adventofcode2018.days
 
-import adventofcode2018.util.path
+import com.andrewgazelka.adventofcode2018.util.path
 import java.math.BigInteger
 import java.nio.file.Files
 

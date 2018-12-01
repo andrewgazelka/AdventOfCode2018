@@ -1,4 +1,4 @@
-package adventofcode2018.util
+package com.andrewgazelka.adventofcode2018.util
 
 import java.nio.file.Path
 import java.nio.file.Paths
