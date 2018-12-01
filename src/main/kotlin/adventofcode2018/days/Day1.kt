@@ -5,8 +5,7 @@ import java.math.BigInteger
 import java.nio.file.Files
 
 fun main(args: Array<String>) {
-    one()
-    two()
+    println("P1: ${one()}, P2: ${two()}")
 }
 
 val inputs by lazy {
@@ -15,17 +14,14 @@ val inputs by lazy {
         .map { it.toBigInteger() }
 }
 
-fun one() {
-    val result = inputs.sumBy { it.toInt() }
-    println("(1.1) Answer: $result")
+fun one(): BigInteger {
+    return inputs.reduce { a, b -> a + b }
 }
 
-fun two() {
+fun two(): BigInteger? {
 
     val freqSet = HashSet<BigInteger>()
-
     var sum = BigInteger.ZERO
-
     freqSet.add(sum)
 
     repeat(1000)
@@ -34,9 +30,9 @@ fun two() {
             sum += bigInteger
 
             if (!freqSet.add(sum)) {
-                println("(1.2) Answer: $sum, Repeat #: $it")
-                return
+                return sum
             }
         }
     }
+    return null
 }
